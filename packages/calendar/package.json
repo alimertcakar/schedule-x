@@ -1,12 +1,10 @@
 {
-  "name": "@schedule-x/calendar",
+  "name": "@alimert/schedule-x-calendar",
   "umdName": "SXCalendar",
   "version": "2.14.3",
-  "description": "Schedule-X calendar component",
+  "description": "A custom Schedule-X calendar component",
   "author": {
-    "name": "Tom Österlund",
-    "email": "tom@schedule-x.dev",
-    "url": "https://github.com/tomosterlund"
+    "name": "Ali Mert Çakar"
   },
   "license": "MIT",
   "keywords": [
