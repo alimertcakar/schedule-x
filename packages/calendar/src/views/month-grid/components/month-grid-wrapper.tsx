@@ -1,13 +1,14 @@
+import { useSignalEffect } from '@preact/signals'
 import { PreactViewComponent } from '@schedule-x/shared/src/types/calendar/preact-view-component'
 import { useState } from 'preact/hooks'
-import { createMonth } from '../utils/stateless/create-month'
-import { Month } from '../types/month'
-import MonthGridWeek from './month-grid-week'
+
 import { AppContext } from '../../../utils/stateful/app-context'
-import { positionInMonth } from '../utils/stateless/position-in-month'
-import { sortEventsByStartAndEndWithoutConsideringTime } from '../../../utils/stateless/events/sort-by-start-date'
 import { filterByRange } from '../../../utils/stateless/events/filter-by-range'
-import { useSignalEffect } from '@preact/signals'
+import { sortEventsByStartAndEndWithoutConsideringTime } from '../../../utils/stateless/events/sort-by-start-date'
+import { Month } from '../types/month'
+import { createMonth } from '../utils/stateless/create-month'
+import { positionInMonth } from '../utils/stateless/position-in-month'
+import MonthGridWeek from './month-grid-week'
 
 export const MonthGridWrapper: PreactViewComponent = ({ $app, id }) => {
   const [month, setMonth] = useState<Month>([])
