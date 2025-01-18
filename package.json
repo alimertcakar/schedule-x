@@ -7,8 +7,8 @@
     "libs/*",
     "websites/*"
   ],
-  "version": "0.0.5",
-  "files": ["./packages/*/dist"],
+  "version": "0.0.6",
+  "files": ["./packages/*/dist","./packages/*/dist/**"],
   "scripts": {
     "dev": "vite",
     "serve": "vite serve",
